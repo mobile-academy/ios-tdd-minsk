@@ -37,6 +37,8 @@
 		51043FAA43E3EC9A3D85074C /* Configurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104360D9F181D89E20CA03C /* Configurator.m */; };
 		810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */; };
 		8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DB7AF1DA1000E168C97 /* PollManagerSpec.m */; };
+		810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */; };
+		8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DB7AF1DA1000E168C97 /* PollManagerSpec.m */; };
 		5E274A4E19DDD67C0005624F /* AgendaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274A4D19DDD67C0005624F /* AgendaTableViewCell.m */; };
 		5E274A5119DDD69F0005624F /* FakeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274A5019DDD69F0005624F /* FakeTableView.m */; };
 		8108618342CE3920552B0D80 /* Poll.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086E6021AE14C1F87E9B1B /* Poll.m */; };
@@ -868,6 +870,11 @@
 				1EDB80AF6BC4C379C818A5CF /* AgendaProviderSpec.m in Sources */,
 				B27A93BC50952551175D197B /* SpeakerDetailsViewControllerSpec.m in Sources */,
 				510430CE778A22D93A35BC09 /* StreamItemPreviewViewControllerSpec.m in Sources */,
+				8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */,
+				8108668575E58EC6F3B87611 /* PollViewControllerSpec.m in Sources */,
+				8108665BE1436DC507093E43 /* FakePollManager.m in Sources */,
+				810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */,
+				810865C01FB2CD9DF8222BD0 /* FakePollViewController.m in Sources */,
 				8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */,
 				8108668575E58EC6F3B87611 /* PollViewControllerSpec.m in Sources */,
 				8108665BE1436DC507093E43 /* FakePollManager.m in Sources */,
