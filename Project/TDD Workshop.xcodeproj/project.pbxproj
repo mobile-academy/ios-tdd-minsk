@@ -45,6 +45,7 @@
 		81086E163A9DFF20967D20E4 /* PollTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108669326B9976BB96F7862 /* PollTextField.m */; };
 		81086E78FC205DB4277A4652 /* PollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810864696868DEB6E3D638D9 /* PollView.m */; };
 		944AF0D51907124D00C36DA1 /* PhotoStreamViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 510430351EDD2ECC10DB5F0C /* PhotoStreamViewControllerSpec.m */; };
+		94AE3A4319DDEA9500377992 /* StreamItemPreviewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AE3A4219DDEA9500377992 /* StreamItemPreviewLayout.m */; };
 		B27A901654FE494E865AF180 /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9BB373E87A85573C3463 /* AgendaViewController.m */; };
 		B27A9056ADDB5BAB5972C05E /* SpeakersCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9C59E6E6435FEAA650A4 /* SpeakersCollectionViewLayout.m */; };
 		B27A90C1276516EF0976C721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A98A82123128D7921D187 /* AppDelegate.m */; };
@@ -149,6 +150,8 @@
 		81086C9C3664DABFE46AD77B /* PollSliderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollSliderItem.h; sourceTree = "<group>"; };
 		81086E6021AE14C1F87E9B1B /* Poll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poll.m; sourceTree = "<group>"; };
 		81086FFD6A2E06064ABAE888 /* NSLayoutConstraint+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Utilities.h"; sourceTree = "<group>"; };
+		94AE3A4119DDEA9500377992 /* StreamItemPreviewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItemPreviewLayout.h; sourceTree = "<group>"; };
+		94AE3A4219DDEA9500377992 /* StreamItemPreviewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamItemPreviewLayout.m; sourceTree = "<group>"; };
 		A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B27A906A6CF5289BAF372867 /* SpeakerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerCollectionViewCell.h; sourceTree = "<group>"; };
 		B27A91D8F9FC82A0D8F2EB73 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -329,6 +332,8 @@
 		510431EE5B6B07FE13F635DD /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				94AE3A4119DDEA9500377992 /* StreamItemPreviewLayout.h */,
+				94AE3A4219DDEA9500377992 /* StreamItemPreviewLayout.m */,
 				510431497BD5ED2FA70D4A3C /* StreamItemPreviewViewController.h */,
 				51043DE94D02BF3DAD3C447E /* StreamItemPreviewViewController.m */,
 				5104396E024236D211BE68A7 /* StreamItemPreviewViewControllerSpec.m */,
@@ -759,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27A90C1276516EF0976C721 /* AppDelegate.m in Sources */,
+				94AE3A4319DDEA9500377992 /* StreamItemPreviewLayout.m in Sources */,
 				B27A9ACDFF47B5C7A1E152D0 /* Speaker.m in Sources */,
 				B27A99C4343479416F7949A1 /* SpeakersViewController.m in Sources */,
 				B27A9D59259653BDEABA00A3 /* main.m in Sources */,
