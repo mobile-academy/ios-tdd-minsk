@@ -1,5 +1,5 @@
 //
-// KeyboardManager.h
+// KeyboardManager.m
 // https://github.com/hackiftekhar/IQKeyboardManager
 // Copyright (c) 2013-14 Iftekhar Qurashi.
 //
@@ -22,11 +22,12 @@
 // THE SOFTWARE.
 
 #import "IQKeyboardManager.h"
-#import "IQ_UIView+Hierarchy.h"
+#import "IQUIView+Hierarchy.h"
 #import "IQUIView+IQKeyboardToolbar.h"
-#import "IQ_UIWindow+Hierarchy.h"
-#import "IQ_NSArray+Sort.h"
+#import "IQUIWindow+Hierarchy.h"
+#import "IQNSArray+Sort.h"
 #import "IQToolbar.h"
+#import "IQBarButtonItem.h"
 
 #import <UIKit/UITapGestureRecognizer.h>
 #import <UIKit/UITextField.h>
@@ -39,7 +40,7 @@
 //Remove compiler warning
 -(void)previousAction:(id)segmentedControl;
 -(void)nextAction:(id)segmentedControl;
--(void)doneAction:(UIBarButtonItem*)barButton;
+-(void)doneAction:(IQBarButtonItem*)barButton;
 
 @end
 
@@ -91,7 +92,7 @@
     NSInteger animationCurve;
     
 	/*! To save UITextField/UITextView object voa textField/textView notifications. */
-    UIView *_textFieldView;
+    __weak UIView *_textFieldView;
     
     /*! To save keyboard size. */
     CGSize kbSize;
@@ -100,7 +101,7 @@
 	NSNotification *kbShowNotification;
     
     /*! Variable to save lastScrollView that was scrolled. */
-    UIScrollView *lastScrollView;
+    __weak UIScrollView *lastScrollView;
     
     /*! LastScrollView's initial contentOffset. */
     CGPoint startingContentOffset;
@@ -118,12 +119,15 @@
 //UIKeyboard handling
 @synthesize enable                              =   _enable;
 @synthesize keyboardDistanceFromTextField       =   _keyboardDistanceFromTextField;
+@synthesize overrideKeyboardAppearance          =   _overrideKeyboardAppearance;
+@synthesize keyboardAppearance                  =   _keyboardAppearance;
 
 //IQToolbar handling
 @synthesize enableAutoToolbar                   =   _enableAutoToolbar;
 @synthesize toolbarManageBehaviour              =   _toolbarManageBehaviour;
 @synthesize shouldToolbarUsesTextFieldTintColor =   _shouldToolbarUsesTextFieldTintColor;
 @synthesize shouldShowTextFieldPlaceholder      =   _shouldShowTextFieldPlaceholder;
+@synthesize placeholderFont                     =   _placeholderFont;
 
 //TextView handling
 @synthesize canAdjustTextView                   =   _canAdjustTextView;
@@ -145,6 +149,16 @@
 {
     [super load];
     [[IQKeyboardManager sharedManager] setEnable:YES];
+}
+
+//Special TextView
+Class EKPlaceholderTextViewClass;
+
++(void)initialize
+{
+    [super initialize];
+
+    EKPlaceholderTextViewClass = NSClassFromString(@"EKPlaceholderTextView");
 }
 
 /*  Singleton Object Initialization. */
@@ -181,11 +195,12 @@
             [self setShouldPlayInputClicks:NO];
             [self setShouldResignOnTouchOutside:NO];
             [self setShouldToolbarUsesTextFieldTintColor:NO];
-
+            [self setOverrideKeyboardAppearance:NO];
+            [self setKeyboardAppearance:UIKeyboardAppearanceDefault];
+            
             [self setEnableAutoToolbar:YES];
             [self setShouldShowTextFieldPlaceholder:YES];
             [self setShouldAdoptDefaultKeyboardAnimation:YES];
-
             [self setToolbarManageBehaviour:IQAutoToolbarBySubviews];
             
             _keyWindow = [self keyWindow];
@@ -618,7 +633,7 @@
 	if (_enable == NO)	return;
 	
     //Due to orientation callback we need to resave it's original frame.
-    textFieldViewIntialFrame = _textFieldView.frame;
+    textFieldViewIntialFrame = _enable && _canAdjustTextView ? _textFieldView.frame : CGRectZero;
     
     if (_shouldAdoptDefaultKeyboardAnimation)
     {
@@ -664,7 +679,11 @@
     //If last restored keyboard size is different(any orientation accure), then refresh. otherwise not.
     if (!CGSizeEqualToSize(kbSize, oldKBSize))
     {
-        [self adjustFrame];
+        //If it is EventKit textView object then let EventKit to adjust it. (Bug ID: #37)
+        if ([_textFieldView isKindOfClass:EKPlaceholderTextViewClass] == NO)
+        {
+            [self adjustFrame];
+        }
     }
 }
 
@@ -686,11 +705,15 @@
     _textFieldView = nil;
 }
 
+
 /*!  UITextFieldTextDidBeginEditingNotification, UITextViewTextDidBeginEditingNotification. Fetching UITextFieldView object. */
 -(void)textFieldViewDidBeginEditing:(NSNotification*)notification
 {
     //  Getting object
     _textFieldView = notification.object;
+    
+    if (_overrideKeyboardAppearance == YES) [(UITextField*)_textFieldView setKeyboardAppearance:_keyboardAppearance];
+    
 	// If the manager is not enabled and it can't adjust the textview set the initial frame to CGRectZero
     textFieldViewIntialFrame = _enable && _canAdjustTextView ? _textFieldView.frame : CGRectZero;
     
@@ -726,8 +749,12 @@
         topViewBeginRect = rootController.view.frame;
     }
     
-    //  keyboard is already showing. adjust frame.
-    [self adjustFrame];
+    //If it is EventKit textView object then let EventKit to adjust it. (Bug ID: #37)
+    if ([_textFieldView isKindOfClass:EKPlaceholderTextViewClass] == NO)
+    {
+        //  keyboard is already showing. adjust frame.
+        [self adjustFrame];
+    }
 }
 
 /* UITextViewTextDidChangeNotificationBug,  fix for iOS 7.0.x - http://stackoverflow.com/questions/18966675/uitextview-in-ios7-clips-the-last-line-of-text-string */
@@ -883,7 +910,7 @@
 }
 
 /*!	doneAction. Resigning current textField. */
--(void)doneAction:(UIBarButtonItem*)barButton
+-(void)doneAction:(IQBarButtonItem*)barButton
 {
     if (_shouldPlayInputClicks)
     {

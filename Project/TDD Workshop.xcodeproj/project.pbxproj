@@ -87,6 +87,8 @@
 		1EDB8BDFB344DF3A32724382 /* AgendaItemFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaItemFixture.h; sourceTree = "<group>"; };
 		1EDB8C06591F6E2CFA397CAF /* FakeAgendaProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeAgendaProvider.m; sourceTree = "<group>"; };
 		1EDB8FEB587E71943373CE37 /* FakeAgendaProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeAgendaProvider.h; sourceTree = "<group>"; };
+		325AABD7BFEC82A5BC08FCDF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8221EAE0EA91C5206E325A /* Pods-specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-specs/Pods-specs.debug.xcconfig"; sourceTree = "<group>"; };
 		43C5D4B11904429F002D1766 /* TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C5D4B41904429F002D1766 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43C5D4B61904429F002D1766 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,7 +98,6 @@
 		43C5D4DE1904429F002D1766 /* TDD WorkshopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDD WorkshopTests-Info.plist"; sourceTree = "<group>"; };
 		43C5D4E01904429F002D1766 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43C5D4EC190447DE002D1766 /* Specs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
-		4442B29770594D57863624A3 /* Pods-specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.xcconfig"; path = "Pods/Pods-specs.xcconfig"; sourceTree = "<group>"; };
 		510430351EDD2ECC10DB5F0C /* PhotoStreamViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoStreamViewControllerSpec.m; sourceTree = "<group>"; };
 		510431497BD5ED2FA70D4A3C /* StreamItemPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItemPreviewViewController.h; sourceTree = "<group>"; };
 		51043207E6DA7C07E54F2B88 /* PhotoStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoStreamViewController.m; sourceTree = "<group>"; };
@@ -148,7 +149,7 @@
 		81086C9C3664DABFE46AD77B /* PollSliderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollSliderItem.h; sourceTree = "<group>"; };
 		81086E6021AE14C1F87E9B1B /* Poll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poll.m; sourceTree = "<group>"; };
 		81086FFD6A2E06064ABAE888 /* NSLayoutConstraint+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Utilities.h"; sourceTree = "<group>"; };
-		B1988BE4051D4DB1BD8289FA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B27A906A6CF5289BAF372867 /* SpeakerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerCollectionViewCell.h; sourceTree = "<group>"; };
 		B27A91D8F9FC82A0D8F2EB73 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B27A9294987EC3FA6A167639 /* TDD Workshop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TDD Workshop-Prefix.pch"; sourceTree = "<group>"; };
@@ -189,6 +190,7 @@
 		B27A9FB3501C500CA929A2A1 /* AgendaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaItem.m; sourceTree = "<group>"; };
 		B2F06B64128243AF9AC3D4B0 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59A1BB742214388ABE91004 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7755B06CE94C4B54FA029A7 /* Pods-specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-specs/Pods-specs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,8 +244,7 @@
 				43C5D4DC1904429F002D1766 /* TDD WorkshopTests */,
 				43C5D4B31904429F002D1766 /* Frameworks */,
 				43C5D4B21904429F002D1766 /* Products */,
-				4442B29770594D57863624A3 /* Pods-specs.xcconfig */,
-				B1988BE4051D4DB1BD8289FA /* Pods.xcconfig */,
+				5C16B5A2F5606619CC37A780 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,6 +371,17 @@
 				510436E62419B941DDEA1A1D /* StreamItemTransformer.h */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5C16B5A2F5606619CC37A780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				325AABD7BFEC82A5BC08FCDF /* Pods.debug.xcconfig */,
+				A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */,
+				3F8221EAE0EA91C5206E325A /* Pods-specs.debug.xcconfig */,
+				F7755B06CE94C4B54FA029A7 /* Pods-specs.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		810866EA08EFFD118D9F0215 /* Poll */ = {
@@ -537,8 +549,8 @@
 		B27A9BE18D0C70ACFDEE0C5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9FB3501C500CA929A2A1 /* AgendaItem.m */,
 				B27A9D03E0BFFE1351B0F75F /* AgendaItem.h */,
+				B27A9FB3501C500CA929A2A1 /* AgendaItem.m */,
 				B27A98C9553E38A463E9F4D9 /* AgendaProvider.m */,
 				B27A9AE1C12AECA3342112A0 /* AgendaProvider.h */,
 				1EDB8361EBA8EEABB97963E4 /* AgendaProviderSpec.m */,
@@ -706,7 +718,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-specs-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-specs/Pods-specs-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85B6ADA36F4C4FF69C246BB4 /* Check Pods Manifest.lock */ = {
@@ -736,7 +748,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -896,7 +908,7 @@
 		};
 		43C5D4E71904429F002D1766 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1988BE4051D4DB1BD8289FA /* Pods.xcconfig */;
+			baseConfigurationReference = 325AABD7BFEC82A5BC08FCDF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -910,7 +922,7 @@
 		};
 		43C5D4E81904429F002D1766 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1988BE4051D4DB1BD8289FA /* Pods.xcconfig */;
+			baseConfigurationReference = A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -924,7 +936,7 @@
 		};
 		43C5D4EA1904429F002D1766 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4442B29770594D57863624A3 /* Pods-specs.xcconfig */;
+			baseConfigurationReference = 3F8221EAE0EA91C5206E325A /* Pods-specs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDD Workshop.app/TDD Workshop";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -947,7 +959,7 @@
 		};
 		43C5D4EB1904429F002D1766 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4442B29770594D57863624A3 /* Pods-specs.xcconfig */;
+			baseConfigurationReference = F7755B06CE94C4B54FA029A7 /* Pods-specs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDD Workshop.app/TDD Workshop";
 				FRAMEWORK_SEARCH_PATHS = (

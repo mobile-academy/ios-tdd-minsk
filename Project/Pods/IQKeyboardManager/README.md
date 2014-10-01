@@ -21,7 +21,7 @@ Cocoapod
 IQKeyboardManager is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod 'IQKeyboardManager', '~>3.0.3'
+    pod 'IQKeyboardManager'
 
 Framework:-
 ---
@@ -31,8 +31,28 @@ Source Code:-
 ---
 Just drag and drop `IQKeyBoardManager` directory from demo project to your project. That's it. No need to write any single line of code. It will enable automatically.
 
-Manual Toolbar Management:-
+Manual Management:-
 ---
+
+#### UINavigationBar:-
+
+  If you don't want to hide the default UINavigationBar of UINavigationController when keyboardManager slides up the view, then just change the UIView class to UIScrollView from the storyboard or xib.
+
+[![image](./KeyboardTextFieldDemo/Screenshot/UINavigationBarExample.png)]
+
+
+  If you are not using storyboard or xib and creating your view programmatically. Then you need to override '-(void)loadView' method of UIViewController, and need to set an UIScrollView instance to self.view.
+
+    -(void)loadView
+    {
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.view = scrollView;
+    }
+ 
+ 
+
+#### UIToolbar(IQToolbar):-
+
 1) If you don't want to add automatic toolbar over keyboard for a specific textField then you should add a UIView as it's toolbar like this:-
 ```
 textField.inputAccessoryView = [[UIView alloc] init];

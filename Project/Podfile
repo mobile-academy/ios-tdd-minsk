@@ -2,9 +2,11 @@ platform :ios, '7.0'
 
 inhibit_all_warnings!
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 xcodeproj 'TDD Workshop'
 
-pod 'Parse-iOS-SDK', '~> 1.2'
+pod 'Parse-iOS-SDK', '~> 1.3'
 pod 'IQKeyboardManager', '~>3.0.4'
 pod 'Masonry'
 pod 'SAMultisectorControl'

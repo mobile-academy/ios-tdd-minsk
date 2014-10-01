@@ -36,13 +36,20 @@
 @interface UIView (IQToolbarAddition)
 
 /*!
+    @property shouldHideTitle
+ 
+    @abstract if shouldHideTitle is YES, then title will not be added to the toolbar. Default to NO.
+ */
+@property (assign, nonatomic) BOOL shouldHideTitle;
+
+/*!
     @method addDoneOnKeyboardWithTarget:action:
  
     @abstract Helper functions to add Done button on keyboard.
  
     @param target: Target object for selector. Usually 'self'.
  
-    @param action: Done button action name. Usually 'doneAction:(UIBarButtonItem*)item'.
+    @param action: Done button action name. Usually 'doneAction:(IQBarButtonItem*)item'.
  
     @param shouldShowPlaceholder: A boolean to indicate whether to show textField placeholder on IQToolbar'.
  
@@ -63,9 +70,9 @@
  
     @param target: Target object for selector. Usually 'self'.
  
-    @param cancelAction: Crevious button action name. Usually 'cancelAction:(UIBarButtonItem*)item'.
+    @param cancelAction: Crevious button action name. Usually 'cancelAction:(IQBarButtonItem*)item'.
  
-    @param doneAction: Done button action name. Usually 'doneAction:(UIBarButtonItem*)item'.
+    @param doneAction: Done button action name. Usually 'doneAction:(IQBarButtonItem*)item'.
  
     @param shouldShowPlaceholder: A boolean to indicate whether to show textField placeholder on IQToolbar'.
  
@@ -89,7 +96,7 @@
  
     @param nextAction: Next button action name. Usually 'nextAction:(IQSegmentedNextPrevious*)segmentedControl'.
  
-    @param doneAction: Done button action name. Usually 'doneAction:(UIBarButtonItem*)item'.
+    @param doneAction: Done button action name. Usually 'doneAction:(IQBarButtonItem*)item'.
  
     @param shouldShowPlaceholder: A boolean to indicate whether to show textField placeholder on IQToolbar'.
  

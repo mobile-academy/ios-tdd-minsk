@@ -10,6 +10,8 @@
 	<string>TDD Workshop</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>6B9AD3938EC6D454FAE58ED59EB623DF80369572</key>
+		<string>github.com:mobile-academy/ios-tdd-seed.git</string>
 		<key>D7F9B798-4A4B-4C6C-B5C8-5258F8C2C614</key>
 		<string>https://github.com/paweldudek/tdd-workshop-v2</string>
 	</dict>
@@ -17,17 +19,27 @@
 	<string>Project/TDD Workshop.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D7F9B798-4A4B-4C6C-B5C8-5258F8C2C614</key>
+		<key>6B9AD3938EC6D454FAE58ED59EB623DF80369572</key>
 		<string>../..</string>
+		<key>D7F9B798-4A4B-4C6C-B5C8-5258F8C2C614</key>
+		<string>../../../tdd-workshop-v2</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/paweldudek/tdd-workshop-v2</string>
+	<string>github.com:mobile-academy/ios-tdd-seed.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D7F9B798-4A4B-4C6C-B5C8-5258F8C2C614</string>
+	<string>6B9AD3938EC6D454FAE58ED59EB623DF80369572</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6B9AD3938EC6D454FAE58ED59EB623DF80369572</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-tdd-seed</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
