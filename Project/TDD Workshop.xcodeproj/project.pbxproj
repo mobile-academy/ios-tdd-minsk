@@ -21,6 +21,7 @@
 		510431358E25B1DCFAED9960 /* StreamItemPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043DE94D02BF3DAD3C447E /* StreamItemPreviewViewController.m */; };
 		510431791B37A9A99385A641 /* MinskConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043AB14D427734F191F4B3 /* MinskConfiguration.m */; };
 		510431F36EDABCA7A7E84118 /* StreamItemCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 510434BAAD88EC50EEB039B1 /* StreamItemCreator.m */; };
+		510433F3AF71B61255104AD8 /* fakeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5104379F79F3CD2B91B96D85 /* fakeImage.png */; };
 		510434A8BD8A51FD6A30E5E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5104345744CA86EDD8BC6565 /* Localizable.strings */; };
 		510434B6A43EA784E14ADCCE /* StreamItemUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 510437936BA1CFAE94AA5BBB /* StreamItemUploader.m */; };
 		5104365C827422284475A68C /* StreamItemDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043B6325427C8FAF2CAAEE /* StreamItemDownloader.m */; };
@@ -28,6 +29,7 @@
 		510437B3AFF9B4DFB61D4D37 /* ConfigurationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043C0A7BD0895BF7021DFB /* ConfigurationFactory.m */; };
 		510437C9E9173E0AEE1BF5D9 /* PhotoStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043207E6DA7C07E54F2B88 /* PhotoStreamViewController.m */; };
 		51043A111913B3C14E89500B /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 510439BD510B17C8EEF28909 /* ImageResizer.m */; };
+		51043ACCE288B8EDA84C067C /* StreamItem+FakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043E48B5DA09641BD70F97 /* StreamItem+FakeModel.m */; };
 		51043C783E82165202F605B2 /* StreamItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 510436CAD5C76AB731F5FC76 /* StreamItem.m */; };
 		51043DB9335FD27CFF47F901 /* PhotoStreamLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043490CB53601D7905B27C /* PhotoStreamLayout.m */; };
 		51043E931A99B1B2AAB437DB /* PhotoStreamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 510437B92629399AA5A617E6 /* PhotoStreamCell.m */; };
@@ -116,6 +118,7 @@
 		510436E62419B941DDEA1A1D /* StreamItemTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItemTransformer.h; sourceTree = "<group>"; };
 		510436F9CF147A9F0DE5D97B /* StreamItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItem.h; sourceTree = "<group>"; };
 		510437936BA1CFAE94AA5BBB /* StreamItemUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamItemUploader.m; sourceTree = "<group>"; };
+		5104379F79F3CD2B91B96D85 /* fakeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fakeImage.png; sourceTree = "<group>"; };
 		510437B92629399AA5A617E6 /* PhotoStreamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoStreamCell.m; sourceTree = "<group>"; };
 		5104384BE0B04D91B48B5A49 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		510438A1415624392BB038A8 /* MinskConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinskConfiguration.h; sourceTree = "<group>"; };
@@ -127,7 +130,9 @@
 		51043C0A7BD0895BF7021DFB /* ConfigurationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationFactory.m; sourceTree = "<group>"; };
 		51043C7AD35D283FC3A8997B /* StreamItemTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamItemTransformer.m; sourceTree = "<group>"; };
 		51043DE94D02BF3DAD3C447E /* StreamItemPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamItemPreviewViewController.m; sourceTree = "<group>"; };
+		51043E48B5DA09641BD70F97 /* StreamItem+FakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StreamItem+FakeModel.m"; sourceTree = "<group>"; };
 		51043F16E2B9F624D87DD1E0 /* StreamItemUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItemUploader.h; sourceTree = "<group>"; };
+		51043FC36F4314F5CCA08768 /* StreamItem+FakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamItem+FakeModel.h"; sourceTree = "<group>"; };
 		8108605EE578750878FC1317 /* PollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollTextView.h; sourceTree = "<group>"; };
 		8108618E9EA466C9108D9CDB /* AgendaProvider+SharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AgendaProvider+SharedInstance.h"; sourceTree = "<group>"; };
 		81086306084AE59953A39AB2 /* AgendaProvider+SharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AgendaProvider+SharedInstance.m"; sourceTree = "<group>"; };
@@ -326,6 +331,15 @@
 			path = "Photo Stream";
 			sourceTree = "<group>";
 		};
+		510430A6B7FD855268038760 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				51043E48B5DA09641BD70F97 /* StreamItem+FakeModel.m */,
+				51043FC36F4314F5CCA08768 /* StreamItem+FakeModel.h */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
 		510431EE5B6B07FE13F635DD /* Preview */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +383,7 @@
 				510433ABB1897A0420B539B4 /* StreamItemDownloader.h */,
 				51043C7AD35D283FC3A8997B /* StreamItemTransformer.m */,
 				510436E62419B941DDEA1A1D /* StreamItemTransformer.h */,
+				510430A6B7FD855268038760 /* Fakes */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,6 +546,7 @@
 				B27A9BEE6F48E39B73B68281 /* Speakers.JSON */,
 				5104345744CA86EDD8BC6565 /* Localizable.strings */,
 				810863A399DF2C73F86CBB3C /* Agenda.JSON */,
+				5104379F79F3CD2B91B96D85 /* fakeImage.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -675,6 +691,7 @@
 				B27A9E1107889ABC8D32C72F /* Speakers.JSON in Resources */,
 				510434A8BD8A51FD6A30E5E7 /* Localizable.strings in Resources */,
 				810866F1FE320FA1B2B2F023 /* Agenda.JSON in Resources */,
+				510433F3AF71B61255104AD8 /* fakeImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +812,7 @@
 				81086747DA487D249A16BAFE /* PollSliderItem.m in Sources */,
 				810868C67B5D309FA50BE791 /* AgendaProvider+SharedInstance.m in Sources */,
 				81086445592BEC5457D4163D /* NSLayoutConstraint+Utilities.m in Sources */,
+				51043ACCE288B8EDA84C067C /* StreamItem+FakeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

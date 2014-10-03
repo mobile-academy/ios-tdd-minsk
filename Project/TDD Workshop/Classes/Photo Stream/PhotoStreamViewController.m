@@ -8,6 +8,7 @@
 #import "PhotoStreamLayout.h"
 #import "PhotoStreamCell.h"
 #import "StreamItemPreviewViewController.h"
+#import "StreamItem+FakeModel.h"
 
 @interface PhotoStreamViewController ()
 @property(nonatomic, strong) UIRefreshControl *refreshControl;

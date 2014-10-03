@@ -7,6 +7,7 @@
 #import "StreamItemDownloader.h"
 #import "StreamItem.h"
 #import "StreamItemTransformer.h"
+#import "StreamItem+FakeModel.h"
 
 @interface StreamItemDownloader ()
 @property(nonatomic, strong) StreamItemTransformer *transformer;
@@ -34,14 +35,17 @@
 - (void)downloadStreamItems {
     PFQuery *query = [PFQuery queryWithClassName:NSStringFromClass([StreamItem class])];
     StreamItemDownloader * __weak weakSelf = self;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        NSMutableArray *streamItems = [NSMutableArray new];
-        for (PFObject *object in objects) {
-            StreamItem *streamItem = [self.transformer streamItemFromParseObject:object];
-            [streamItems addObject:streamItem];
-        }
-        [weakSelf.delegate streamItemDownloader:self didDownloadItems:streamItems];
-    }];
+
+    [weakSelf.delegate streamItemDownloader:self didDownloadItems:[StreamItem fakeStreamItems]];
+
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        NSMutableArray *streamItems = [NSMutableArray new];
+//        for (PFObject *object in objects) {
+//            StreamItem *streamItem = [self.transformer streamItemFromParseObject:object];
+//            [streamItems addObject:streamItem];
+//        }
+//        [weakSelf.delegate streamItemDownloader:self didDownloadItems:streamItems];
+//    }];
 }
 
 @end
