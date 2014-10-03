@@ -5,7 +5,7 @@
 
 #import "ConfigurationFactory.h"
 #import "Configuration.h"
-#import "BerlinConfiguration.h"
+#import "MinskConfiguration.h"
 
 
 @interface ConfigurationFactory ()
@@ -22,7 +22,7 @@
     if (self) {
         self.mappingKey = [[NSBundle mainBundle] bundleIdentifier];
         self.configurationMapping = @{
-            @"com.mobile-warsaw.TDD-Workshop" : [BerlinConfiguration class]
+            @"com.mobile-warsaw.TDD-Workshop" : [MinskConfiguration class]
         };
     }
     return self;
