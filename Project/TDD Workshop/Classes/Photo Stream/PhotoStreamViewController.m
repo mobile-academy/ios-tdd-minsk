@@ -92,8 +92,7 @@ NSString * const PhotoStreamViewControllerCellId = @"PhotoStreamViewControllerCe
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    StreamItem *streamItem = self.streamItems[(NSUInteger) indexPath.item];
-    StreamItemPreviewViewController *streamItemViewController = [StreamItemPreviewViewController controllerWithStreamItem:streamItem];
+    StreamItemPreviewViewController *streamItemViewController = [[StreamItemPreviewViewController alloc] initWithStreamItems:self.streamItems];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:streamItemViewController];
     [self presentViewController:navigationController animated:YES completion:nil];
 }
@@ -101,10 +100,7 @@ NSString * const PhotoStreamViewControllerCellId = @"PhotoStreamViewControllerCe
 #pragma mark - StreamItemDownloaderDelegate
 
 - (void)streamItemDownloader:(StreamItemDownloader *)streamItemDownloader didDownloadItems:(NSArray *)items {
-
-    //self.streamItems = [NSMutableArray arrayWithArray:items];
-    self.streamItems = [NSMutableArray arrayWithArray:[StreamItem fakeStreamItems]];
-
+    self.streamItems = [NSMutableArray arrayWithArray:items];
     [self.collectionView reloadData];
     [self.refreshControl endRefreshing];
 }
