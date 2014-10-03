@@ -101,7 +101,10 @@ NSString * const PhotoStreamViewControllerCellId = @"PhotoStreamViewControllerCe
 #pragma mark - StreamItemDownloaderDelegate
 
 - (void)streamItemDownloader:(StreamItemDownloader *)streamItemDownloader didDownloadItems:(NSArray *)items {
-    self.streamItems = [NSMutableArray arrayWithArray:items];
+
+    //self.streamItems = [NSMutableArray arrayWithArray:items];
+    self.streamItems = [NSMutableArray arrayWithArray:[StreamItem fakeStreamItems]];
+
     [self.collectionView reloadData];
     [self.refreshControl endRefreshing];
 }
