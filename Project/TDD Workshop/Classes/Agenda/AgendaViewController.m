@@ -6,6 +6,7 @@
 #import "AgendaProvider.h"
 #import "AgendaTableViewCell.h"
 
+NSString *const kAgendaItemCellId = @"AgendaItemCellId";
 
 @implementation AgendaViewController
 
@@ -13,12 +14,22 @@
     self = [super initWithStyle:style];
     if (self) {
         self.tabBarItem.image = [UIImage imageNamed:@"agenda"];
+        self.title = NSLocalizedString(@"Agenda", @"Agenda");
+
+        self.agendaProvider = [AgendaProvider new];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self.tableView registerClass:[AgendaTableViewCell class] forCellReuseIdentifier:kAgendaItemCellId];
+    
+    typeof(self) __weak weakSelf = self;
+    [self.agendaProvider reloadAgendaWithCompletionHandler:^{
+        [weakSelf.tableView reloadData];
+    }];
 }
 
 #pragma mark - Data source
@@ -28,11 +39,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.agendaProvider.agendaItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    AgendaItem *agendaItem = self.agendaProvider.agendaItems[(NSUInteger) indexPath.row];
+    AgendaTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:kAgendaItemCellId];
+    cell.textLabel.text = agendaItem.title;
+    return cell;
 }
 
 @end
