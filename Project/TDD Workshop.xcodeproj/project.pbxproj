@@ -70,6 +70,8 @@
 		B27A9D2A610E08BA7B2FF7D4 /* SpeakersCollectionViewDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9D2C679D85AD77ECDB6D /* SpeakersCollectionViewDataSourceSpec.m */; };
 		B27A9D59259653BDEABA00A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A945B2F9713B160FE4645 /* main.m */; };
 		B27A9E1107889ABC8D32C72F /* Speakers.JSON in Resources */ = {isa = PBXBuildFile; fileRef = B27A9BEE6F48E39B73B68281 /* Speakers.JSON */; };
+		BC95600C3D8947EC6CB5EA16 /* AgendaItemFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB86E908039895488C9398 /* AgendaItemFixture.m */; };
+		BC95641B5CC4F4B0211F6BDD /* FakeAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8C06591F6E2CFA397CAF /* FakeAgendaProvider.m */; };
 		BD856E5C1C064F578B72D2D3 /* libPods-specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F06B64128243AF9AC3D4B0 /* libPods-specs.a */; };
 /* End PBXBuildFile section */
 
@@ -823,6 +825,8 @@
 				1EDB80AF6BC4C379C818A5CF /* AgendaProviderSpec.m in Sources */,
 				B27A93BC50952551175D197B /* SpeakerDetailsViewControllerSpec.m in Sources */,
 				510430CE778A22D93A35BC09 /* StreamItemPreviewViewControllerSpec.m in Sources */,
+				BC95641B5CC4F4B0211F6BDD /* FakeAgendaProvider.m in Sources */,
+				BC95600C3D8947EC6CB5EA16 /* AgendaItemFixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
