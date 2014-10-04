@@ -36,16 +36,14 @@
     PFQuery *query = [PFQuery queryWithClassName:NSStringFromClass([StreamItem class])];
     StreamItemDownloader * __weak weakSelf = self;
 
-    [weakSelf.delegate streamItemDownloader:self didDownloadItems:[StreamItem fakeStreamItems]];
-
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        NSMutableArray *streamItems = [NSMutableArray new];
-//        for (PFObject *object in objects) {
-//            StreamItem *streamItem = [self.transformer streamItemFromParseObject:object];
-//            [streamItems addObject:streamItem];
-//        }
-//        [weakSelf.delegate streamItemDownloader:self didDownloadItems:streamItems];
-//    }];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSMutableArray *streamItems = [NSMutableArray new];
+        for (PFObject *object in objects) {
+            StreamItem *streamItem = [self.transformer streamItemFromParseObject:object];
+            [streamItems addObject:streamItem];
+        }
+        [weakSelf.delegate streamItemDownloader:self didDownloadItems:streamItems];
+    }];
 }
 
 @end
