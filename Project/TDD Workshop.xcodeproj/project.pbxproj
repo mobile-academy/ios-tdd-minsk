@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0835AE51E1D442A2BE7765FA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E59A1BB742214388ABE91004 /* libPods.a */; };
 		1EDB80AF6BC4C379C818A5CF /* AgendaProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8361EBA8EEABB97963E4 /* AgendaProviderSpec.m */; };
+		431DCE1F19E03C4B0048A843 /* PollManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DB7AF1DA1000E168C97 /* PollManagerSpec.m */; };
+		431DCE2019E03C620048A843 /* PollViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108608AABA9DEECDAC8D60B /* PollViewControllerSpec.m */; };
+		431DCE2119E03C740048A843 /* FakePollAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */; };
+		431DCE2219E03C950048A843 /* FakePollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086BDF1E34DBE4C9C5205D /* FakePollViewController.m */; };
+		431DCE2319E03CA30048A843 /* FakePollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086337E53519C55394BF26 /* FakePollManager.m */; };
 		43C5D4B51904429F002D1766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C5D4B41904429F002D1766 /* Foundation.framework */; };
 		43C5D4B71904429F002D1766 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C5D4B61904429F002D1766 /* CoreGraphics.framework */; };
 		43C5D4B91904429F002D1766 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C5D4B81904429F002D1766 /* UIKit.framework */; };
@@ -35,13 +40,9 @@
 		51043E931A99B1B2AAB437DB /* PhotoStreamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 510437B92629399AA5A617E6 /* PhotoStreamCell.m */; };
 		51043F48261F9EF558458820 /* StreamItemTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043C7AD35D283FC3A8997B /* StreamItemTransformer.m */; };
 		51043FAA43E3EC9A3D85074C /* Configurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104360D9F181D89E20CA03C /* Configurator.m */; };
-		81086065F0114D29D7A40632 /* BaseValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 810862830B82A465970701BF /* BaseValidator.m */; };
-		810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */; };
-		8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DB7AF1DA1000E168C97 /* PollManagerSpec.m */; };
-		810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */; };
-		8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DB7AF1DA1000E168C97 /* PollManagerSpec.m */; };
 		5E274A4E19DDD67C0005624F /* AgendaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274A4D19DDD67C0005624F /* AgendaTableViewCell.m */; };
 		5E274A5119DDD69F0005624F /* FakeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274A5019DDD69F0005624F /* FakeTableView.m */; };
+		81086065F0114D29D7A40632 /* BaseValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 810862830B82A465970701BF /* BaseValidator.m */; };
 		8108618342CE3920552B0D80 /* Poll.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086E6021AE14C1F87E9B1B /* Poll.m */; };
 		810861A425652A5114611562 /* CommentValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086D38C45A12013087D372 /* CommentValidator.m */; };
 		810861ABBF47988687902610 /* ViewValidatorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086AB892D0D96B70845F9A /* ViewValidatorFactory.m */; };
@@ -49,11 +50,7 @@
 		8108632DC13EC8A20D155989 /* EMailValidatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086C4AE087835C90C35D21 /* EMailValidatorSpec.m */; };
 		81086445592BEC5457D4163D /* NSLayoutConstraint+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108658947B4BF9E7612FDE6 /* NSLayoutConstraint+Utilities.m */; };
 		810864B2A94D0D43BBEAF612 /* ViewValidatorFactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810868438A11F8996B8EC76D /* ViewValidatorFactorySpec.m */; };
-		8108651C96170D5DC479A2B8 /* BaseValidator+SpecUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086748937B6F26BC62FCBC /* BaseValidator+SpecUtilities.m */; };
-		810865C01FB2CD9DF8222BD0 /* FakePollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086BDF1E34DBE4C9C5205D /* FakePollViewController.m */; };
 		810866338622BEC7C4C0EB4A /* PollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B0D9ED2535E7BDB6F6A /* PollTextView.m */; };
-		8108665BE1436DC507093E43 /* FakePollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086337E53519C55394BF26 /* FakePollManager.m */; };
-		8108668575E58EC6F3B87611 /* PollViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108608AABA9DEECDAC8D60B /* PollViewControllerSpec.m */; };
 		810866B138C3E04FB14466FC /* PollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867D57EB6024B3BB3AFC1 /* PollViewController.m */; };
 		810866F1FE320FA1B2B2F023 /* Agenda.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 810863A399DF2C73F86CBB3C /* Agenda.JSON */; };
 		81086747DA487D249A16BAFE /* PollSliderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 810865CD1845B24926B9304F /* PollSliderItem.m */; };
@@ -72,15 +69,18 @@
 		B27A9056ADDB5BAB5972C05E /* SpeakersCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9C59E6E6435FEAA650A4 /* SpeakersCollectionViewLayout.m */; };
 		B27A90C1276516EF0976C721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A98A82123128D7921D187 /* AppDelegate.m */; };
 		B27A9102589328414886245B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27A9F1C86B830D77578705F /* Images.xcassets */; };
+		B27A92263E46FC31309EAC18 /* UIAlertView+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9929D4B14656C93AE6A1 /* UIAlertView+Specs.m */; };
 		B27A925418322C40B77A8998 /* AgendaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FB3501C500CA929A2A1 /* AgendaItem.m */; };
 		B27A928374737A6869A3182D /* SpeakersCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9C59E6E6435FEAA650A4 /* SpeakersCollectionViewLayout.m */; };
 		B27A92B6316A1E604BF9B98F /* SeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9A99558246AC21EABCD7 /* SeparatorView.m */; };
+		B27A92EF4E89C2684C440BC6 /* UITextField+TextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CDEF471C54609B4C63E /* UITextField+TextControl.m */; };
 		B27A93238C3DB4F0859DD791 /* AgendaViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A92D0682AFE21E11385A9 /* AgendaViewControllerSpec.m */; };
 		B27A937730478652E2F1969E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27A9EA130AFF757F72BDC66 /* Main.storyboard */; };
 		B27A93BC50952551175D197B /* SpeakerDetailsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9A7F313CB7B4BA43122F /* SpeakerDetailsViewControllerSpec.m */; };
 		B27A954E6E7A4E4CA2F00D8A /* SpeakersViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9720DB26070703067460 /* SpeakersViewControllerSpec.m */; };
 		B27A9726136F5C773F598D6D /* SpeakerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9BFB623551B2B8B63403 /* SpeakerDetailsViewController.m */; };
 		B27A97FE7901600A8818F3DA /* SpeakerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9E37AC949A57E1B51C39 /* SpeakerCollectionViewCell.m */; };
+		B27A996E9AD2E838B588E305 /* UITextView+TextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FE3FCB7DBD8C03E9CFD /* UITextView+TextControl.m */; };
 		B27A9971BB928EAA6E0EDE6E /* AgendaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A98C9553E38A463E9F4D9 /* AgendaProvider.m */; };
 		B27A9989AF15DCF4A14C8599 /* UIColor+TDDWorkshop.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9A19F501F0EBB0F4CE4D /* UIColor+TDDWorkshop.m */; };
 		B27A99C4343479416F7949A1 /* SpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A96CC784650B22E261274 /* SpeakersViewController.m */; };
@@ -153,15 +153,14 @@
 		51043DE94D02BF3DAD3C447E /* StreamItemPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamItemPreviewViewController.m; sourceTree = "<group>"; };
 		51043E48B5DA09641BD70F97 /* StreamItem+FakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StreamItem+FakeModel.m"; sourceTree = "<group>"; };
 		51043F16E2B9F624D87DD1E0 /* StreamItemUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamItemUploader.h; sourceTree = "<group>"; };
-		8108603216FB4C0AF321CF59 /* EMailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMailValidator.m; sourceTree = "<group>"; };
 		51043FC36F4314F5CCA08768 /* StreamItem+FakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamItem+FakeModel.h"; sourceTree = "<group>"; };
 		5E274A4C19DDD67C0005624F /* AgendaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTableViewCell.h; sourceTree = "<group>"; };
 		5E274A4D19DDD67C0005624F /* AgendaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaTableViewCell.m; sourceTree = "<group>"; };
 		5E274A4F19DDD69F0005624F /* FakeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTableView.h; sourceTree = "<group>"; };
 		5E274A5019DDD69F0005624F /* FakeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTableView.m; sourceTree = "<group>"; };
+		8108603216FB4C0AF321CF59 /* EMailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMailValidator.m; sourceTree = "<group>"; };
 		8108605EE578750878FC1317 /* PollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollTextView.h; sourceTree = "<group>"; };
 		8108608AABA9DEECDAC8D60B /* PollViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollViewControllerSpec.m; sourceTree = "<group>"; };
-		81086112A900CF1F1CA953D5 /* BaseValidator+SpecUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseValidator+SpecUtilities.h"; sourceTree = "<group>"; };
 		8108618E9EA466C9108D9CDB /* AgendaProvider+SharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AgendaProvider+SharedInstance.h"; sourceTree = "<group>"; };
 		810862830B82A465970701BF /* BaseValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseValidator.m; sourceTree = "<group>"; };
 		8108629CFD0BEA91E271C917 /* FakePollAgendaProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakePollAgendaProvider.h; sourceTree = "<group>"; };
@@ -178,7 +177,6 @@
 		81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakePollAgendaProvider.m; sourceTree = "<group>"; };
 		8108669326B9976BB96F7862 /* PollTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollTextField.m; sourceTree = "<group>"; };
 		810866FCAC38E491806480F0 /* PollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollView.h; sourceTree = "<group>"; };
-		81086748937B6F26BC62FCBC /* BaseValidator+SpecUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseValidator+SpecUtilities.m"; sourceTree = "<group>"; };
 		81086752E3E47147613256AD /* ViewValidatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewValidatorFactory.h; sourceTree = "<group>"; };
 		810867CEB226013EA92C4573 /* PollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollManager.h; sourceTree = "<group>"; };
 		810867D57EB6024B3BB3AFC1 /* PollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollViewController.m; sourceTree = "<group>"; };
@@ -210,6 +208,7 @@
 		81086FFD6A2E06064ABAE888 /* NSLayoutConstraint+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Utilities.h"; sourceTree = "<group>"; };
 		A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B27A906A6CF5289BAF372867 /* SpeakerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerCollectionViewCell.h; sourceTree = "<group>"; };
+		B27A91A3EE7A01461E0E3179 /* UITextField+TextControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextControl.h"; sourceTree = "<group>"; };
 		B27A91D8F9FC82A0D8F2EB73 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B27A9294987EC3FA6A167639 /* TDD Workshop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TDD Workshop-Prefix.pch"; sourceTree = "<group>"; };
 		B27A92AF299A933F6819BD8F /* SpeakersCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakersCollectionViewDataSource.m; sourceTree = "<group>"; };
@@ -228,8 +227,10 @@
 		B27A97D7E26B0DD389DAA34F /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		B27A98A82123128D7921D187 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B27A98C9553E38A463E9F4D9 /* AgendaProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaProvider.m; sourceTree = "<group>"; };
+		B27A9929D4B14656C93AE6A1 /* UIAlertView+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Specs.m"; sourceTree = "<group>"; };
 		B27A992CDED62E26B51734A3 /* SpeakersCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakersCollectionViewDataSource.h; sourceTree = "<group>"; };
 		B27A9959941ED617E76CFAF9 /* SeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatorView.h; sourceTree = "<group>"; };
+		B27A995AF1DEC41B91E0BC64 /* UIAlertView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Specs.h"; sourceTree = "<group>"; };
 		B27A9A19F501F0EBB0F4CE4D /* UIColor+TDDWorkshop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TDDWorkshop.m"; sourceTree = "<group>"; };
 		B27A9A7F313CB7B4BA43122F /* SpeakerDetailsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerDetailsViewControllerSpec.m; sourceTree = "<group>"; };
 		B27A9A99558246AC21EABCD7 /* SeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatorView.m; sourceTree = "<group>"; };
@@ -239,14 +240,17 @@
 		B27A9BEE6F48E39B73B68281 /* Speakers.JSON */ = {isa = PBXFileReference; lastKnownFileType = file.JSON; path = Speakers.JSON; sourceTree = "<group>"; };
 		B27A9BFB623551B2B8B63403 /* SpeakerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerDetailsViewController.m; sourceTree = "<group>"; };
 		B27A9C59E6E6435FEAA650A4 /* SpeakersCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakersCollectionViewLayout.m; sourceTree = "<group>"; };
+		B27A9CDEF471C54609B4C63E /* UITextField+TextControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextControl.m"; sourceTree = "<group>"; };
 		B27A9CFFF76719DF63F378A8 /* Speaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speaker.m; sourceTree = "<group>"; };
 		B27A9D03E0BFFE1351B0F75F /* AgendaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaItem.h; sourceTree = "<group>"; };
 		B27A9D22A0F1383379E96210 /* SpeakerCollectionViewCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerCollectionViewCellSpec.m; sourceTree = "<group>"; };
 		B27A9D2C679D85AD77ECDB6D /* SpeakersCollectionViewDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakersCollectionViewDataSourceSpec.m; sourceTree = "<group>"; };
+		B27A9D91F6B7482CB0A02D29 /* UITextView+TextControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+TextControl.h"; sourceTree = "<group>"; };
 		B27A9E37AC949A57E1B51C39 /* SpeakerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerCollectionViewCell.m; sourceTree = "<group>"; };
 		B27A9EA130AFF757F72BDC66 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B27A9F1C86B830D77578705F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B27A9FB3501C500CA929A2A1 /* AgendaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaItem.m; sourceTree = "<group>"; };
+		B27A9FE3FCB7DBD8C03E9CFD /* UITextView+TextControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TextControl.m"; sourceTree = "<group>"; };
 		B2F06B64128243AF9AC3D4B0 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC95616004FF409C2AF26035 /* AgendaItemFixture+Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AgendaItemFixture+Fixture.h"; sourceTree = "<group>"; };
 		BC95677D1739D2027A50E57B /* AgendaItemFixture+Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AgendaItemFixture+Fixture.m"; sourceTree = "<group>"; };
@@ -283,8 +287,6 @@
 		1EDB821A28DD8CAF7BA0E7B6 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				1EDB86E908039895488C9398 /* AgendaItemFixture.m */,
-				1EDB8BDFB344DF3A32724382 /* AgendaItemFixture.h */,
 				81086D2899CC381180133247 /* SpecValidatorFixture.m */,
 				81086F9A7C04B9BEB5369E32 /* SpecValidatorFixture.h */,
 				BC95677D1739D2027A50E57B /* AgendaItemFixture+Fixture.m */,
@@ -300,10 +302,6 @@
 				5E274A5019DDD69F0005624F /* FakeTableView.m */,
 				1EDB8FEB587E71943373CE37 /* FakeAgendaProvider.h */,
 				1EDB8C06591F6E2CFA397CAF /* FakeAgendaProvider.m */,
-				1EDB8DC8BECEE523F246FC82 /* FakeAgendaCollectionViewDataSource.h */,
-				1EDB836B8C0BBED816EC918A /* FakeAgendaCollectionViewDataSource.m */,
-				1EDB8A2AB8AECD1BF0ECAECA /* FakeCollectionView.m */,
-				1EDB84F5A15840E705C1A65A /* FakeCollectionView.h */,
 				81086337E53519C55394BF26 /* FakePollManager.m */,
 				8108663003B8F153CE9F48C9 /* FakePollManager.h */,
 				81086650B52C8E341CEBA0E2 /* FakePollAgendaProvider.m */,
@@ -365,6 +363,7 @@
 				43C5D4DD1904429F002D1766 /* Supporting Files */,
 				1EDB889573FF6D6F835D06D2 /* Fakes */,
 				1EDB821A28DD8CAF7BA0E7B6 /* Fixtures */,
+				B27A9B148AD0733F57B1DF14 /* Helpers */,
 			);
 			path = "TDD WorkshopTests";
 			sourceTree = "<group>";
@@ -462,6 +461,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5C16B5A2F5606619CC37A780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				325AABD7BFEC82A5BC08FCDF /* Pods.debug.xcconfig */,
+				A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */,
+				3F8221EAE0EA91C5206E325A /* Pods-specs.debug.xcconfig */,
+				F7755B06CE94C4B54FA029A7 /* Pods-specs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		810863000DE4FE3DB0A61869 /* Validators */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +483,7 @@
 				810863BF4C9D5A9F101CDB6B /* NameValidator */,
 				81086A2070392A62F824D5F0 /* CommentValidator */,
 				81086487FC8CFA285E72640C /* EMailValidator */,
+				B27A9111E28F5A363D63926D /* Helpers */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -490,8 +501,6 @@
 		81086447450EA8518CC0B586 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				81086112A900CF1F1CA953D5 /* BaseValidator+SpecUtilities.h */,
-				81086748937B6F26BC62FCBC /* BaseValidator+SpecUtilities.m */,
 				81086D2C036BDF1D371518B8 /* BaseValidator.h */,
 				810862830B82A465970701BF /* BaseValidator.m */,
 			);
@@ -506,17 +515,6 @@
 				8108603216FB4C0AF321CF59 /* EMailValidator.m */,
 			);
 			path = EMailValidator;
-			sourceTree = "<group>";
-		};
-		5C16B5A2F5606619CC37A780 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				325AABD7BFEC82A5BC08FCDF /* Pods.debug.xcconfig */,
-				A63F4361163A0CA7E0B47B93 /* Pods.release.xcconfig */,
-				3F8221EAE0EA91C5206E325A /* Pods-specs.debug.xcconfig */,
-				F7755B06CE94C4B54FA029A7 /* Pods-specs.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		810866EA08EFFD118D9F0215 /* Poll */ = {
@@ -599,6 +597,17 @@
 				B27A92D0682AFE21E11385A9 /* AgendaViewControllerSpec.m */,
 			);
 			path = Agenda;
+			sourceTree = "<group>";
+		};
+		B27A9111E28F5A363D63926D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B27A9CDEF471C54609B4C63E /* UITextField+TextControl.m */,
+				B27A91A3EE7A01461E0E3179 /* UITextField+TextControl.h */,
+				B27A9FE3FCB7DBD8C03E9CFD /* UITextView+TextControl.m */,
+				B27A9D91F6B7482CB0A02D29 /* UITextView+TextControl.h */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B27A91BBD0A018454C9F8083 /* Speakers View Controller */ = {
@@ -695,6 +704,15 @@
 				B27A9959941ED617E76CFAF9 /* SeparatorView.h */,
 			);
 			path = "Collection View Layout";
+			sourceTree = "<group>";
+		};
+		B27A9B148AD0733F57B1DF14 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B27A9929D4B14656C93AE6A1 /* UIAlertView+Specs.m */,
+				B27A995AF1DEC41B91E0BC64 /* UIAlertView+Specs.h */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B27A9BE18D0C70ACFDEE0C5E /* Model */ = {
@@ -954,6 +972,8 @@
 				810861A425652A5114611562 /* CommentValidator.m in Sources */,
 				810869222C047725078E7155 /* EMailValidator.m in Sources */,
 				51043ACCE288B8EDA84C067C /* StreamItem+FakeModel.m in Sources */,
+				B27A92EF4E89C2684C440BC6 /* UITextField+TextControl.m in Sources */,
+				B27A996E9AD2E838B588E305 /* UITextView+TextControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,35 +981,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431DCE2019E03C620048A843 /* PollViewControllerSpec.m in Sources */,
 				B27A954E6E7A4E4CA2F00D8A /* SpeakersViewControllerSpec.m in Sources */,
 				B27A9D2A610E08BA7B2FF7D4 /* SpeakersCollectionViewDataSourceSpec.m in Sources */,
 				5E274A5119DDD69F0005624F /* FakeTableView.m in Sources */,
 				B27A9A828140E48431A9F462 /* SpeakerCollectionViewCellSpec.m in Sources */,
 				944AF0D51907124D00C36DA1 /* PhotoStreamViewControllerSpec.m in Sources */,
+				431DCE2219E03C950048A843 /* FakePollViewController.m in Sources */,
 				B27A928374737A6869A3182D /* SpeakersCollectionViewLayout.m in Sources */,
 				B27A93238C3DB4F0859DD791 /* AgendaViewControllerSpec.m in Sources */,
 				1EDB80AF6BC4C379C818A5CF /* AgendaProviderSpec.m in Sources */,
 				B27A93BC50952551175D197B /* SpeakerDetailsViewControllerSpec.m in Sources */,
 				510430CE778A22D93A35BC09 /* StreamItemPreviewViewControllerSpec.m in Sources */,
-				8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */,
-				8108668575E58EC6F3B87611 /* PollViewControllerSpec.m in Sources */,
-				8108665BE1436DC507093E43 /* FakePollManager.m in Sources */,
-				810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */,
-				810865C01FB2CD9DF8222BD0 /* FakePollViewController.m in Sources */,
+				431DCE1F19E03C4B0048A843 /* PollManagerSpec.m in Sources */,
 				810864B2A94D0D43BBEAF612 /* ViewValidatorFactorySpec.m in Sources */,
-				8108651C96170D5DC479A2B8 /* BaseValidator+SpecUtilities.m in Sources */,
 				81086E08743535459E49938D /* NameValidatorSpec.m in Sources */,
 				81086F237B4A2C984AB5367E /* CommentValidatorSpec.m in Sources */,
 				8108632DC13EC8A20D155989 /* EMailValidatorSpec.m in Sources */,
 				8108623605FE3E730D2F7ACE /* FakeViewValidatorFactory.m in Sources */,
+				431DCE2119E03C740048A843 /* FakePollAgendaProvider.m in Sources */,
 				8108679077A588DAFEA31B68 /* SpecValidatorFixture.m in Sources */,
-				8108614E36A5A4ED5DE6F324 /* PollManagerSpec.m in Sources */,
-				8108668575E58EC6F3B87611 /* PollViewControllerSpec.m in Sources */,
-				8108665BE1436DC507093E43 /* FakePollManager.m in Sources */,
-				810860D7E54A7556600F4E57 /* FakePollAgendaProvider.m in Sources */,
-				810865C01FB2CD9DF8222BD0 /* FakePollViewController.m in Sources */,
 				BC95641B5CC4F4B0211F6BDD /* FakeAgendaProvider.m in Sources */,
 				BC95689F9FFDE0F116F2F104 /* AgendaItemFixture+Fixture.m in Sources */,
+				431DCE2319E03CA30048A843 /* FakePollManager.m in Sources */,
+				B27A92263E46FC31309EAC18 /* UIAlertView+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

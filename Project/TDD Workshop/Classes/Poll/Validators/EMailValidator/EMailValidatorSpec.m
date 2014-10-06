@@ -1,6 +1,8 @@
 #import "Specs.h"
 
 #import "EMailValidator.h"
+#import "UITextField+TextControl.h"
+#import "UIAlertView+Specs.h"
 
 SPEC_BEGIN(EMailValidatorSpec)
 
@@ -16,14 +18,72 @@ describe(@"EMailValidator", ^{
     });
 
     describe(@"validation", ^{
-        it(@"should pass, correct address", ^{
-            BOOL isValid = [validator validateText:@"example@example.com"];
-            expect(isValid).to.beTruthy();
+
+        __block UITextField *textField;
+
+        beforeEach(^{
+            textField = [[UITextField alloc] init];
         });
 
-        it(@"should not pass, incorrect address", ^{
-            BOOL isValid = [validator validateText:@"example.com"];
-            expect(isValid).to.beFalsy();
+        context(@"when the text has is a valid email", ^{
+
+            __block BOOL isValid;
+
+            beforeEach(^{
+                textField.text = @"example@example.com";
+                isValid = [validator validateTextControl:textField];
+            });
+
+            it(@"should be valid", ^{
+                expect(isValid).to.beTruthy();
+            });
+
+            it(@"should not clear the text field", ^{
+                expect(textField.text).to.equal(@"example@example.com");
+            });
+
+            describe(@"last displayed alert view", ^{
+
+                __block UIAlertView *lastDisplayedAlertView;
+
+                beforeEach(^{
+                    lastDisplayedAlertView = [UIAlertView lastDisplayedAlertView];
+                });
+
+                it(@"should be nil", ^{
+                    expect(lastDisplayedAlertView).to.beNil();
+                });
+            });
+        });
+
+        context(@"when the text is not a valid email", ^{
+            __block BOOL isValid;
+
+            beforeEach(^{
+                textField.text = @"example.com";
+                isValid = [validator validateTextControl:textField];
+            });
+
+            it(@"should not be valid", ^{
+                expect(isValid).to.beFalsy();
+            });
+
+            it(@"should have no text", ^{
+                expect(textField.text.length).to.equal(0);
+            });
+
+            describe(@"last displayed alert view", ^{
+
+                __block UIAlertView *lastDisplayedAlertView;
+
+                beforeEach(^{
+                    lastDisplayedAlertView = [UIAlertView lastDisplayedAlertView];
+                });
+
+                it(@"should have a warning message", ^{
+                    expect(lastDisplayedAlertView.message).to.equal(@"Wrong email address!");
+                });
+            });
         });
     });
 });

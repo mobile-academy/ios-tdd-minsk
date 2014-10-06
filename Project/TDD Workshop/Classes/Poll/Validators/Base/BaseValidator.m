@@ -1,9 +1,7 @@
 #import "BaseValidator.h"
 
 
-@implementation BaseValidator {
-
-}
+@implementation BaseValidator
 
 - (void)displayAlertViewWithText:(NSString *)text {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning"

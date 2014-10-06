@@ -14,4 +14,5 @@
                    validatorFactory:(ViewValidatorFactory *)validatorFactory;
 
 - (void)configureRightNavigationItem:(BOOL)isPollCompleted;
+
 @end

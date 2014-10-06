@@ -10,6 +10,8 @@
 #import "PollSliderItem.h"
 #import "Poll.h"
 #import "ViewValidatorFactory.h"
+#import "UITextField+TextControl.h"
+#import "UITextView+TextControl.h"
 
 @implementation PollViewController
 
@@ -125,12 +127,12 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     id <Validating> validator = [self.validatorFactory validatorForView:textField];
-    [validator validateText:textField.text];
+    [validator validateTextControl:textField];
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView {
     id <Validating> validator = [self.validatorFactory validatorForView:textView];
-    [validator validateText:textView.text];
+    [validator validateTextControl:textView];
 }
 
 @end

@@ -1,14 +1,13 @@
-#import "EMailValidator.h"
+sa#import "EMailValidator.h"
 
 
-@implementation EMailValidator {
+@implementation EMailValidator
 
-}
-
-- (BOOL)validateText:(NSString *)text {
-    BOOL isValid = [self isValidEmail:text];
+- (BOOL)validateTextControl:(id <TextControl>)textControl {
+    BOOL isValid = [self isValidEmail:textControl.text];
     if (!isValid) {
         [self displayAlertViewWithText:@"Wrong email address!"];
+        textControl.text = nil;
     }
     return isValid;
 }

@@ -1,6 +1,8 @@
 #import "Specs.h"
 
 #import "NameValidator.h"
+#import "UITextView+TextControl.h"
+
 
 SPEC_BEGIN(NameValidatorSpec)
 
@@ -15,15 +17,44 @@ describe(@"NameValidator", ^{
         validator = nil;
     });
 
-    describe(@"validation", ^{
-        it(@"should pass, non digital chars", ^{
-            BOOL isValid = [validator validateText:@"John Dow"];
+    __block UITextView *textField;
+
+    beforeEach(^{
+        textField = [[UITextView alloc] init];
+    });
+
+    context(@"when the text is a valid name", ^{
+
+        __block BOOL isValid;
+
+        beforeEach(^{
+            textField.text = @"John Appleseed";
+            isValid = [validator validateTextControl:textField];
+        });
+
+        it(@"should be valid", ^{
             expect(isValid).to.beTruthy();
         });
 
-        it(@"should not pass, includes digits", ^{
-            BOOL isValid = [validator validateText:@"John 123 Dow"];
+        it(@"should clear the text field", ^{
+            expect(textField.text).to.equal(@"John Dow");
+        });
+    });
+
+    context(@"when the text is not a valid name", ^{
+        __block BOOL isValid;
+
+        beforeEach(^{
+            textField.text = @"John Appleseed 2";
+            isValid = [validator validateTextControl:textField];
+        });
+
+        it(@"should not be valid", ^{
             expect(isValid).to.beFalsy();
+        });
+
+        it(@"should have no text", ^{
+            expect(textField.text.length).to.equal(0);
         });
     });
 });

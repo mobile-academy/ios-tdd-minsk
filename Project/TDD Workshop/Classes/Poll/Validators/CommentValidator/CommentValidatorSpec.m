@@ -1,8 +1,9 @@
 #import "Specs.h"
 
 #import "CommentValidator.h"
+#import "UITextField+TextControl.h"
 
-SpecBegin(CommentValidatorSpec)
+SpecBegin(CommentValidator)
 
 describe(@"CommentValidator", ^{
     __block CommentValidator *validator;
@@ -17,16 +18,47 @@ describe(@"CommentValidator", ^{
 
     describe(@"validation", ^{
 
-        it(@"should pass, more than 10 chars", ^{
-            BOOL isValid = [validator validateText:@"asdjklzxcvbm"];
-            expect(isValid).to.beTruthy();
+        __block UITextField *textField;
+
+        beforeEach(^{
+            textField = [[UITextField alloc] init];
         });
 
-        it(@"should not pass, less than 10 chars", ^{
-            BOOL isValid = [validator validateText:@"asdj"];
-            expect(isValid).to.beFalsy();
+        context(@"when the text has is too short", ^{
+
+            __block BOOL isValid;
+
+
+            beforeEach(^{
+                textField.text = @"Fixture Long Text";
+                isValid = [validator validateTextControl:textField];
+            });
+
+            it(@"should be valid", ^{
+                expect(isValid).to.beTruthy();
+            });
+
+            it(@"should clear the text field", ^{
+                expect(textField.text).to.equal(@"Fixture Long Text");
+            });
         });
 
+        context(@"when the text length is ok", ^{
+            __block BOOL isValid;
+
+            beforeEach(^{
+                textField.text = @"Short";
+                isValid = [validator validateTextControl:textField];
+            });
+
+            it(@"should not be valid", ^{
+                expect(isValid).to.beFalsy();
+            });
+
+            it(@"should have no text", ^{
+                expect(textField.text.length).to.equal(0);
+            });
+        });
     });
 
 });

@@ -6,8 +6,6 @@
 
 @implementation ViewValidatorFactory
 
-
-
 - (id <Validating>)validatorForView:(UIView *)view {
     return [[self validatorsMap][@(view.tag)] new];
 }

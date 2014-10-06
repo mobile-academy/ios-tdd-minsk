@@ -2,10 +2,12 @@
 
 
 @implementation NameValidator
-- (BOOL)validateText:(NSString *)text {
-    BOOL isNotValid = [text length] > 0 && [text rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]].location != NSNotFound;
+
+- (BOOL)validateTextControl:(id <TextControl>)textControl {
+    BOOL isNotValid = [textControl.text length] > 0 && [textControl.text rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]].location != NSNotFound;
     if (isNotValid) {
         [self displayAlertViewWithText:@"Wrong characters!"];
+        textControl.text = nil;
     }
     return !isNotValid;
 }
